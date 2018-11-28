@@ -79,6 +79,8 @@
                         <ul class="list-group">
                             <li class="list-group-item"><a href="/home">Картинки портофолио</a></li>
                             <li class="list-group-item"><a href="{{route('main.img')}}">Изображение на главной</a></li>
+                            <li class="list-group-item"><a href="{{route('main.text')}}">Текст на главной</a></li>
+                            <li class="list-group-item"><a href="{{route('about')}}">О нас</a></li>
                         </ul>
                     </div>
                     @yield('content')

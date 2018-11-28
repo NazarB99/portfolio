@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', serif, Calibri, Arial;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: #656c6d;
   background: #efe9e9;
   font-size: 0.9em;
@@ -365,7 +365,7 @@ body.blog.dark .comments-list .comment-date {
 
 body.dark div.bl-panel-items>div>div img,
 body.dark .carousel.carousel-slider,
-body.dark .videocontainer, 
+body.dark .videocontainer,
 body.dark .responsive-video {
   border: 1px solid #333;
 }
@@ -1649,7 +1649,7 @@ body.blog .pagination li a i {
 }
 
 .comments-list li:last-child {
-	
+
 }
 
 .comments-list .comment {

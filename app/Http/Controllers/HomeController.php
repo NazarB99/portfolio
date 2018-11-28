@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\Images;
 use App\MainImage;
+use App\MainText;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -69,6 +71,43 @@ class HomeController extends Controller
                'img_name' => $filename
             ]);
         }
+
+        return redirect()->back();
+    }
+
+    public function about()
+    {
+        return view('about')->with('about',About::find(1));
+    }
+
+    public function about_post(Request $request)
+    {
+        $about = About::find(1);
+
+        $about->title = $request->title;
+        $about->text = $request->text;
+        $about->save();
+
+        return redirect()->back();
+
+    }
+
+    public function main()
+    {
+        return view('main_text')->with('main',MainText::find(1));
+    }
+
+    public function main_post(Request $request)
+    {
+        $main = MainText::find(1);
+
+        $main->first_line = $request->first_line;
+        $main->second_line = $request->second_line;
+        $main->third_line_1 = $request->third_line_1;
+        $main->third_line_2 = $request->third_line_2;
+        $main->third_line_3 = $request->third_line_3;
+
+        $main->save();
 
         return redirect()->back();
     }
