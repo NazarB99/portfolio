@@ -99,7 +99,7 @@
                     <div class="row">
                         <!-- Picture Starts -->
                         <div class="col s12 m4 profile-picture show-on-medium-and-down section-padding">
-                            <img src="images/woman.jpg" class="responsive-img my-picture" alt="My Photo">
+                            <img src="/images/{{$main_img->img_name}}" class="responsive-img my-picture" alt="My Photo">
                         </div>
                         <!-- Picture Ends -->
                         <div class="col s12 m8 l12 xl12 personal-info section-padding">
