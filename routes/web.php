@@ -25,6 +25,7 @@ Route::group(['middleware' => 'auth'],function (){
     Route::post('/add/port-image/delete', 'HomeController@add_img_delete')->name('port.img.delete');
     Route::get('/add/main-img', 'HomeController@main_img')->name('main.img');
     Route::post('/add/main-img/post', 'HomeController@main_img_post')->name('main.img.post');
+    Route::post('/main-img/delete','HomeController@main_img_post_delete')->name('main.img.delete');
 
     Route::get('/about_us', "HomeController@about")->name('about');
     Route::post('/about_us/post', "HomeController@about_post")->name('about.post');

@@ -77,6 +77,15 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function main_img_post_delete()
+    {
+        $m_i = MainImage::find(1);
+        $m_i->img_name = 'watch-live-default.png';
+        $m_i->save();
+
+        return redirect()->back();
+    }
+
     public function about()
     {
         return view('about')->with('about',About::find(1));
