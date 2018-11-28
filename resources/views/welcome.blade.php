@@ -213,7 +213,7 @@
                                     <img class="responsive-img" src="images/projects/{{$img->image}}" alt="Project"
                                          style="width: 385px; height: 248px"/>
                                     <div class="valign-wrapper"><span
-                                                class="font-weight-700 uppercase">Image Project</span></div>
+                                                class="font-weight-700 uppercase">Увеличить</span></div>
                                 </a>
                             </div>
                     @endforeach
