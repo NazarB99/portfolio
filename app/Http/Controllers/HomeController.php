@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\Images;
+use App\Mail\SendMail;
 use App\MainImage;
 use App\MainText;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -108,6 +110,13 @@ class HomeController extends Controller
         $main->third_line_3 = $request->third_line_3;
 
         $main->save();
+
+        return redirect()->back();
+    }
+
+    public function send(Request $request)
+    {
+        Mail::to('aquaprint1988@gmail.com')->send(new SendMail($request->name,$request->email,$request->message));
 
         return redirect()->back();
     }

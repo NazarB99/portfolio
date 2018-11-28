@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Moscow - Personal Portfolio</title>
+    <title>AquaPrint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
@@ -257,61 +257,60 @@
                         <div class="col s12 m5 l5 xl4 leftside">
                             <!-- Contacts Starts -->
                             <h6 class="font-weight-700 uppercase">Phone</h6>
-                            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +34 62 11 84 01</span>
+                            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +993 65 852073</span>
                             <h6 class="font-weight-700 uppercase">Email</h6>
-                            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> you@youwebsite.com</span>
-                            <h6 class="font-weight-700 uppercase">Skype</h6>
-                            <span class="font-weight-400 second-font"><i class="fa fa-skype"></i> linda.smith</span>
+                            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> aquaprint1988@gmail.com</span>
                             <h6 class="font-weight-700 uppercase">Address</h6>
-                            <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Moscow, Russia</span><br>
+                            <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Ashgabat, Turkmenistan</span><br>
                             <!-- Contacts Ends -->
                             <!-- Social Media Profiles Starts -->
-                            <h6 class="font-weight-700 uppercase">Social Profiles</h6>
-                            <div class="social">
-                                <ul class="list-inline social social-intro center-align p-none">
-                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                            {{--<h6 class="font-weight-700 uppercase">Social Profiles</h6>--}}
+                            {{--<div class="social">--}}
+                                {{--<ul class="list-inline social social-intro center-align p-none">--}}
+                                    {{--<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+                                    {{--<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+                                    {{--<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
+                                    {{--<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
                             <!-- Social Media Profiles Ends -->
                         </div>
                         <!-- Contact Infos Ends -->
                         <!-- Contact Form Starts -->
                         <div class="col s12 m7 l7 xl8 rightside">
-                            <h6 class="uppercase m-none font-weight-700">Feel free to drop me a line</h6>
-                            <div class="row">
-                                <p class="col s12 m12 l12 xl10 second-font">
-                                    If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.
-                                </p>
-                            </div>
-                            <form class="contactform" method="post" action="http://slimhamdi.net/moscow/demos/php/process-form.php">
+                            <h6 class="uppercase m-none font-weight-700">Если у вас появились вопросы можте заполнить в форме ниже</h6>
+                            {{--<div class="row">--}}
+                                {{--<p class="col s12 m12 l12 xl10 second-font">--}}
+                                    {{--If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            <form class="contactform" method="post" action="{{route('send.mail')}}">
                                 <!-- Name Field Starts -->
+                                {{csrf_field()}}
                                 <div class="input-field second-font">
                                     <i class="fa fa-user prefix"></i>
                                     <input id="name" name="name" type="text" class="validate" required>
-                                    <label class="font-weight-400" for="name">Your Name</label>
+                                    <label class="font-weight-400" for="name">Ваше имя</label>
                                 </div>
                                 <!-- Name Field Ends -->
                                 <!-- Email Field Starts -->
                                 <div class="input-field second-font">
                                     <i class="fa fa-envelope prefix"></i>
                                     <input id="email" type="email" name="email" class="validate" required>
-                                    <label for="email">Your Email</label>
+                                    <label for="email">Ваш E-Mail</label>
                                 </div>
                                 <!-- Email Field Ends -->
                                 <!-- Comment Textarea Starts -->
                                 <div class="input-field second-font">
                                     <i class="fa fa-comments prefix"></i>
-                                    <textarea id="comment" name="comment" class="materialize-textarea" required></textarea>
-                                    <label for="comment">Your Comment</label>
+                                    <textarea id="comment" name="message" class="materialize-textarea" required></textarea>
+                                    <label for="comment">Ваше сообщение</label>
                                 </div>
                                 <!-- Comment Textarea Ends -->
                                 <!-- Submit Form Button Starts -->
                                 <div class="col s12 m12 l9 xl8 submit-form">
                                     <button class="btn font-weight-700" type="submit" name="send">
-                                        Send Message <i class="fa fa-send"></i>
+                                        Отправить сообщение <i class="fa fa-send"></i>
                                     </button>
                                 </div>
                                 <!-- Submit Form Button Ends -->

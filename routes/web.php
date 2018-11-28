@@ -34,3 +34,5 @@ Route::post('/about_us/post', "HomeController@about_post")->name('about.post');
 
 Route::get('/main', "HomeController@main")->name('main.text');
 Route::post('/main/post', "HomeController@main_post")->name('main.text.post');
+
+Route::post('/send/mail',"HomeController@send")->name('send.mail');
