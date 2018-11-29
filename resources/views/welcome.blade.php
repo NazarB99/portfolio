@@ -134,6 +134,10 @@
                             {{--My Blog <i class="fa fa-edit"></i>--}}
                             {{--</a>--}}
                         </div>
+                        <div class="col s12 m12 l12 xl12 personal-info section-padding" style="margin-top: 2%;">
+                        {{--<div style="height: 150px"></div>--}}
+                            <div id="map" style="height: 500px"></div>
+                        </div>
                     </div>
                     <!-- Personal Informations Ends -->
                 </div>
@@ -377,6 +381,27 @@
 <script src="/js/materialize.min.js"></script>
 <script src="/js/jquery.hoverdir.js"></script>
 <script src="/js/custom.js"></script>
+
+<script>
+    function initMap() {
+        const myLatLng = {lat: 37.952274, lng: 58.434440};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'AquaPrint!'
+        });
+    }
+</script>
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsn0RUEMEAQu4Q9BkaiEh1-5HY4fI9aQo&amp;callback=initMap"></script>
+{{--AIzaSyAa-tem4p6Olh9FaFUKS0YAZy4bHHzyyLM--}}
 
 </body>
 </html>
