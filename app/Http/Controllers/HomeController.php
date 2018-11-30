@@ -37,7 +37,15 @@ class HomeController extends Controller
         $filename = time().'.'.$request->image->getClientOriginalExtension();
         request()->image->move(public_path('images/projects'), $filename);
 
-        //request()->image->move(base_path('/images'), $filename);
+        /***
+         * Linux path
+        */
+        copy(public_path('images/projects/'). $filename, "/var/www/public/images/projects".$filename);
+
+        /**
+         * Windows path
+         */
+        //copy(public_path('images/projects/'). $filename, "D:".$filename);
 
         Images::create([
             'image' => $filename
@@ -64,6 +72,16 @@ class HomeController extends Controller
     {
         $filename = time().'.'.$request->main_image->getClientOriginalExtension();
         $request->main_image->move(public_path('images'), $filename);
+
+        /***
+         * Linux path
+         */
+        copy(public_path('images/'). $filename, "/var/www/public/images/".$filename);
+
+        /**
+         * Windows path
+         */
+        //copy(public_path('images/projects/'). $filename, "D:".$filename);
 
         $main_img = MainImage::find(1);
         if ($main_img !== null){

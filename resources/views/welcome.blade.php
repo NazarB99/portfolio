@@ -263,12 +263,12 @@
                         <!-- Contact Infos Starts -->
                         <div class="col s12 m5 l5 xl4 leftside">
                             <!-- Contacts Starts -->
-                            <h6 class="font-weight-700 uppercase">Phone</h6>
+                            <h6 class="font-weight-700 uppercase">Телефон</h6>
                             <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +993 65 852073</span>
-                            <h6 class="font-weight-700 uppercase">Email</h6>
+                            <h6 class="font-weight-700 uppercase">Электронная почта</h6>
                             <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> aquaprint1988@gmail.com</span>
-                            <h6 class="font-weight-700 uppercase">Address</h6>
-                            <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Ashgabat, Turkmenistan</span><br>
+                            <h6 class="font-weight-700 uppercase">Адрес</h6>
+                            <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Ашхабад, Туркменистан</span><br>
                             <!-- Contacts Ends -->
                             <!-- Social Media Profiles Starts -->
                         {{--<h6 class="font-weight-700 uppercase">Social Profiles</h6>--}}
