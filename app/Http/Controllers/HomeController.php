@@ -37,6 +37,8 @@ class HomeController extends Controller
         $filename = time().'.'.$request->image->getClientOriginalExtension();
         request()->image->move(public_path('images/projects'), $filename);
 
+        //request()->image->move(base_path('/images'), $filename);
+
         Images::create([
             'image' => $filename
         ]);

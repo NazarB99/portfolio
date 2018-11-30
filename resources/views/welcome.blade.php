@@ -135,7 +135,7 @@
                             {{--</a>--}}
                         </div>
                         <div class="col s12 m12 l12 xl12 personal-info section-padding" style="margin-top: 2%;">
-                        {{--<div style="height: 150px"></div>--}}
+                            {{--<div style="height: 150px"></div>--}}
                             <div id="map" style="height: 500px"></div>
                         </div>
                     </div>
@@ -285,8 +285,9 @@
                         <!-- Contact Infos Ends -->
                         <!-- Contact Form Starts -->
                         <div class="col s12 m7 l7 xl8 rightside">
-                            <h6 class="uppercase m-none font-weight-700">Если у вас появились вопросы можте заполнить в
-                                форме ниже</h6>
+                            <h6 class="uppercase m-none font-weight-700">
+                                Оставьте Ваше сообщение и контактные данные мы свяжемся с Вами.
+                            </h6>
                             {{--<div class="row">--}}
                             {{--<p class="col s12 m12 l12 xl10 second-font">--}}
                             {{--If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.--}}
